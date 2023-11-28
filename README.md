@@ -26,7 +26,7 @@
         }
 
 #### User Login
-    - For user login and authentication, using tokens (e.g., JWT)
+    - For user login and authentication, using tokens JWT.
     - Endpoint: POST api/auth/login
     - Request: {
             "email": "user@example.com"
@@ -43,7 +43,7 @@
     - Response: { Status: 200 OK }
 
 #### User ChangePassword
-    - Changes the password for the authenticated user.
+    - Changes the password.
     - Endpoint: POST api/auth/changePassword
     - Request: {
             "oldPassword": "secure_password",
@@ -59,7 +59,7 @@
 ## User Controller
 
 #### Get User Information
-    - Retrieves information about a user based on their ID or email.
+    - Get information about a user based on their ID or email.
     - Endpoint: GET api/user/:idOrEmail
     - Request: {}
     - Response: {
@@ -75,7 +75,7 @@
     - Response: { Status: 200 OK }
 
 #### Get Current User
-    - Retrieves information about the currently authenticated user.
+    - Get information about the current user.
     - Endpoint: GET api/user
     - Headers: Authorization: Bearer <access_token>
     - Response: {
@@ -86,7 +86,7 @@
 ## Image Controller
 
 #### Upload Image
-    - Uploads an image, resizes it.
+    - Uploads image and resizes it.
     - Endpoint: POST api/image/upload
     - Headers: Content Type: multipart/form-data
     - Response {
@@ -94,8 +94,8 @@
             "downloadLink": "https://example.com/api/image/download/filename.jpg"
         }
 
-#### Upload Image
-    - Uploads an image, resizes it.
+#### Download Image
+    - Download resized image.
     - Endpoint: GET api/image/download/:filename
 
 
