@@ -6,7 +6,7 @@
 
     - Run `npm install` to install all the local dependencies (node version 20.x or current LTS release recommended).
 
-    - Run `npm run start` to trigger installation and compilation across all cartridges.
+    - Run `npm run start` 
 
 ## Documentation
 
