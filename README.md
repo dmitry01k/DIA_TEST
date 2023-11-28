@@ -13,14 +13,14 @@
 ## Auth Controller
 
 ### User Registration
-To register a new user:
-**Endpoint:** `POST api/auth/register`
-**Request:** `{
+    - To register a new user:
+    - Endpoint: POST api/auth/register
+    - Request:{
             "email": "user@example.com"
             "password": "secure_password",
             "confirmPassword": "secure_password",
         }
-**Response:** {
+    - Response: {
             "id": "2becb30a-b645-49da-a3a9-9f47f894bd81",
             "email": "user@example.com"
         }
