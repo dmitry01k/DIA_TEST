@@ -12,7 +12,7 @@
 
 ## Auth Controller
 
-### User Registration
+#### User Registration
     - To register a new user:
     - Endpoint: POST api/auth/register
     - Request:{
@@ -25,7 +25,7 @@
             "email": "user@example.com"
         }
 
-### User Login
+#### User Login
     - For user login and authentication, using tokens (e.g., JWT)
     - Endpoint: POST api/auth/login
     - Request: {
@@ -36,13 +36,13 @@
             "accessToken": "Bearer <access_token>"
         }
 
-### User Logout
+#### User Logout
     - User logout. Deleting the stored refresh token.
     - Endpoint: GET api/auth/logout
     - Headers: Authorization: Bearer <access_token>
     - Response: { Status: 200 OK }
 
-### User ChangePassword
+#### User ChangePassword
     - Changes the password for the authenticated user.
     - Endpoint: POST api/auth/changePassword
     - Request: {
@@ -58,7 +58,7 @@
 
 ## User Controller
 
-### Get User Information
+#### Get User Information
     - Retrieves information about a user based on their ID or email.
     - Endpoint: GET api/user/:idOrEmail
     - Request: {}
@@ -67,7 +67,7 @@
             "email": "user@example.com",
         }
 
-### Delete User Account
+#### Delete User Account
     - Deletes a user account based on their ID.
     - Endpoint: DELETE api/user/:id
     - Path Parameters: ID
@@ -85,7 +85,7 @@
 
 ## Image Controller
 
-### Upload Image
+#### Upload Image
     - Uploads an image, resizes it.
     - Endpoint: POST api/image/upload
     - Headers: Content Type: multipart/form-data
@@ -94,7 +94,7 @@
             "downloadLink": "https://example.com/api/image/download/filename.jpg"
         }
 
-### Upload Image
+#### Upload Image
     - Uploads an image, resizes it.
     - Endpoint: GET api/image/download/:filename
 
