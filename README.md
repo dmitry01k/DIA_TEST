@@ -36,7 +36,7 @@
             "accessToken": "Bearer <access_token>"
         }
 
-### *User Logout
+### User Logout
     - User logout. Deleting the stored refresh token.
     - Endpoint: GET api/auth/logout
     - Headers: Authorization: Bearer <access_token>
@@ -74,7 +74,7 @@
     - Headers: Authorization: Bearer <access_token>
     - Response: { Status: 200 OK }
 
-### Get Current User
+#### Get Current User
     - Retrieves information about the currently authenticated user.
     - Endpoint: GET api/user
     - Headers: Authorization: Bearer <access_token>
