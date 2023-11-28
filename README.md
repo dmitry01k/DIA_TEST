@@ -8,11 +8,11 @@
 
     - Run `npm run start` to trigger installation and compilation across all cartridges.
 
-4. Documentation:
+## Documentation
 
-    #Auth Controller
+## Auth Controller
 
-    - User Registration
+### User Registration
     - To register a new user, use the following endpoint:
     - Endpoint: POST api/auth/register
     - Request: {
